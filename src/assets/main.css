@@ -1,0 +1,119 @@
+@import "primeicons/primeicons.css";
+
+@layer tailwind, primevue;
+
+@layer tailwind {
+	@import "tailwindcss";
+}
+
+:root {
+	--primary-bg: #fffaec;
+	--second-bg: #f5ecd5;
+	--main-color: #76abae;
+	--main-disabled-color: #6f9395;
+	--main-hover-color: #84bbbd;
+	--text-color: #3d3d3d;
+	--second-text: #464646;
+	--error-text: oklch(0.704 0.191 22.216);
+	--button-border: #333333;
+	--delete-color: #c74141;
+}
+
+:root .dark {
+	--primary-bg: #222831;
+	--second-bg: #31363f;
+	--main-color: #578e7e;
+	--main-disabled-color: #4c766a;
+	--main-hover-color: #629f8c;
+	--text-color: #eeeeee;
+	--second-text: #ffffff;
+	--button-border: #ffffff;
+}
+
+:root,
+:root .dark {
+	--p-primary-color: var(--main-color) !important;
+	--p-primary-hover-color: var(--main-hover-color) !important;
+}
+
+body {
+	background-color: var(--primary-bg);
+	color-scheme: dark;
+}
+.dark:root {
+	--primary-bg: #fffaec;
+	--second-bg: #f5ecd5;
+	--main-color: #578e7e;
+	--text-color: #3d3d3d;
+}
+.dark {
+	color-scheme: light;
+}
+html * {
+	color: var(--text-color);
+	max-width: 100vw;
+}
+
+.markdown-body {
+	border-radius: 7px;
+	padding: 16px;
+}
+
+.p-card {
+	border-color: var(--p-tabs-tablist-border-color);
+}
+
+.p-button {
+	color: var(--text-color);
+}
+
+.p-select {
+	background-color: var(--main-color);
+}
+
+.p-select-overlay {
+	background-color: var(--main-color);
+}
+
+.p-select-dropdown {
+	color: var(--text-color);
+}
+
+.vmd-input input{
+	background-color: var(--second-bg) !important;
+	color: var(--text-color) !important;
+}
+.vmd-button{
+	background-color: var(--second-bg) !important;
+	border: none !important;
+	color:var(--text-color) !important;
+}
+.vmd-upload,.vmd-upload-box{
+	background-color: var(--second-bg) !important;
+	color:var(--text-color) !important;
+	border: none !important;
+}
+
+.vmd-dropdown-item:hover{
+	background-color: var(--second-bg) !important;
+}
+.markdown-body, .vmd-view{
+	background-color: var(--second -bg) !important;
+	color:var(--text-color) !important;
+
+}
+.markdown-body *{
+	background-color: var(--second -bg) !important;
+	color:var(--text-color) !important;
+}
+
+.vmd-toolbar-right div:first-child div{
+	display: none;
+}
+.vmd-content{
+	color:var(--text-color) !important;
+}
+.vmd-body textarea{
+	background-color: var(--primary-bg) !important;
+	color:var(--text-color) !important;
+}
